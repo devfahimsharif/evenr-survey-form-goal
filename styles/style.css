@@ -52,5 +52,43 @@ textarea{
     margin-top: 4px;
     border: 1px solid #93b9cf;
     border-radius: 4px;
-    
+    color: #3498db;
+}
+input[type='text']::placeholder,
+input[type='email']::placeholder,
+input[type='date']::placeholder,
+textarea::placeholder{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+    color: #3498db;
+}
+/* Radio and Checkbox Styles */
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 6px;
+}
+
+/* Buttons */
+.form-buttons {
+    display: flex;
+    justify-content:space-evenly;
+}
+input[type="submit"],
+input[type="reset"] {
+    background: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+
+input[type="submit"]:hover {
+    background: #328a18;
+}
+
+input[type="reset"]:hover {
+    background: #c0392b;
 }

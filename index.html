@@ -7,10 +7,13 @@
 </head>
 <body>
     <main>
+        <!-- heding innitialized -->
         <h1>
             📝 Event Survey Form
         </h1>
+        <!-- form starting -->
         <form action="" method="post">
+            <!-- Personal Information -->
             <fieldset>
                 <legend>Personal Information</legend>
                 <label for="name">Full Name</label>
@@ -21,12 +24,45 @@
                 <input type="date" name="dob" required>
 
             </fieldset>
+            <!-- Event Selection -->
+            <fieldset>
+                <legend>Event Type</legend>
+                <label for="event">Select Event:</label>
+                <select name="event-type" id="event-type" required>
+                    <option value="-- Please choose an option --"></option>
+                    <option value="conference">Conference</option>
+                    <option value="workshop">Workshop</option>
+                    <option value="seminar">Seminar</option>
+                    <option value="networking">Networking Event</option>
+                    <option value="webinar">Webinar</option>
+                </select>
+            </fieldset>
+            <!-- Gender -->
             <fieldset>
                 <legend>Gender</legend>
                 <label><input type="radio" name="gender" value="Male" required> Male</label>
                 <label><input type="radio" name="gender" value="Female"> Female</label>
                 <label><input type="radio" name="gender" value="Other"> Other</label>
             </fieldset>
+            <!-- Food Preference -->
+            <fieldset>
+                <legend>Food Preference</legend>
+                <label><input type="checkbox" name="food" value="Vegetarian" > Vegetarian</label>
+                <label><input type="checkbox" name="food" value="Non-Vegetarian"> Non-Vegetarian</label>
+                <label><input type="checkbox" name="food" value="Vegan"> Vegan</label>
+                <label><input type="checkbox" name="food" value="Gluten-Free"> Gluten-Free</label>
+            </fieldset>
+            <!-- Comments -->
+            <fieldset>
+                <legend>Additional Comments</legend>
+                <textarea name="comments" rows="4" placeholder="Your feedback or special requests..."></textarea>
+            </fieldset>
+
+            <!-- Buttons -->
+            <div class="form-buttons">
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+            </div>
         </form>
     </main>
 </body>
